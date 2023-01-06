@@ -6,4 +6,4 @@ Difficulté : Très facile
 
 5 points
 
-| Tables | Are | Cool | |----------|:-------------:|------:| | col 1 is | left-aligned | $1600 |
+| Tables | Are | Cool || ---------- | :-------------: | ------: || col 1 is | left-aligned | $1600 |
