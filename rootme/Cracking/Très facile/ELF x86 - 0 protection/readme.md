@@ -4,4 +4,3 @@
 |----------------|------------|--------|
 |     [g0uZ](https://www.root-me.org/g0uZ?lang=fr)       | Très facile|   5    |
 
-[#f03c15][#f03c15][#f03c15][#f03c15][#f03c15]
