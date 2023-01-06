@@ -1,2 +1,2 @@
 # CTF-WriteUps
-Dépôt où l'on retrouve tout un tas de writeups sur différents CTFs
+Dépôt où l'on retrouve tout un tas de writeups sur différents CTFs, répartis en plusieurs catégories
