@@ -20,3 +20,6 @@ Analysons alors son contenu.
 
 ## Partie 2 : Analyse statique
 
+Utilisons la commande **file** pour connaître les caractéristiques de ce fichier exécutable : 
+
+![Screenshot](./assets/images/file_command_ch1.png?raw=true)
