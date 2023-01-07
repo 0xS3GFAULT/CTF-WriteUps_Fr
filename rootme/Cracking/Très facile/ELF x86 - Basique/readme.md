@@ -30,4 +30,5 @@ Cependant, nous ne pouvons pas utiliser la commande **strings** comme au challen
 
 Il faut trouver le point d'entrée du programme. L'outil **gdb-peda** va nous permettre de nous simplifier la tâche avec la commande **info files**:
 
+![Screenshot](./assets/images/gdb_ch2_1.png?raw=true)
 
