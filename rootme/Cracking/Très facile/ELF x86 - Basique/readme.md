@@ -18,7 +18,7 @@ On nous demande de saisir un nom d'utilisateur. L'utilisateur **_azerty_** n'exi
 
 Analysons alors son contenu.
 
-## Partie 2 : Analyse dynamique
+## Partie 2 : Analyse statique
 
 Utilisons la commande **file** pour connaître les caractéristiques de ce fichier exécutable : 
 
@@ -28,8 +28,3 @@ Nous pouvons y lire **not stripped** ce qui signifie que les informations de deb
 
 Cependant, nous ne pouvons pas utiliser la commande **strings** comme au challenge [ELF x86 - 0 protection]() puisqu'il y a bien trop de données à scanner. Tentons d'analyser le code de la section **.text**.
 
-Il faut trouver le point d'entrée du programme. L'outil **gdb-peda** va nous permettre de nous simplifier la tâche avec la commande **info files**:
-
-![Screenshot](./assets/images/gdb_ch2_1.png?raw=true)
-
-Un point d'entrée est disponible : **0x8048150**. Plaçons un breakpoint pour plus tard, et concentrons-n
