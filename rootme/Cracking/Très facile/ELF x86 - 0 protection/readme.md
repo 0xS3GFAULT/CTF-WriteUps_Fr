@@ -15,6 +15,7 @@ Après avoir donné les droits d'exécution, exécutons le programme [ch1.bin](h
 ![Screenshot](./assets/images/exec_ch1.png?raw=true)
 
 On nous demande de saisir un mot de passe. Bien évidemment, **_azerty_** ne fonctionne pas... Et le programme se ferme. 
+
 Analysons alors son contenu.
 
 ## Partie 2 : Analyse statique
