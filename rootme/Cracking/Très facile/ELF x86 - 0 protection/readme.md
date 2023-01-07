@@ -27,3 +27,12 @@ Utilisons la commande **file** pour connaître les caractéristiques de ce fichi
 Nous pouvons y lire **not stripped** ce qui signifie que les informations de debug sont toujours présentes: nous devrions y trouver des noms de fonctions et de variables, qui ont été sûrement initialisées.
 
 La commande **size** va nous permettre de savoir la taille des différentes sections de notre programme. Ainsi, nous pourrons savoir si cette dernière contient de la donnée initialisée :
+
+![Screenshot](./assets/images/size_command_ch1.png?raw=true)
+
+La section la section *.data* contient 296 octets de données initialisées. Peut-être que quelques-uns de ces octets représentent le mot de passe hardcodé dans une variable ? 
+
+Pour nous en convaincre, utilisons la commande **strings** afin de filtrer toutes les chaînes de caractères présentes dans le programme.
+
+![Screenshot](./assets/images/strings_command_ch1.png?raw=true)
+
