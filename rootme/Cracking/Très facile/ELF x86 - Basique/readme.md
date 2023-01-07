@@ -6,7 +6,7 @@
 
 ## Sommaire
 - [Partie 1 : Analyse de l'exécution](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/Cracking/Tr%C3%A8s%20facile/ELF%20x86%20-%200%20protection/readme.md#partie-1--analyse-de-lex%C3%A9cution)
-- [Partie 2 : Analyse statique](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/Cracking/Tr%C3%A8s%20facile/ELF%20x86%20-%200%20protection/readme.md#partie-2--analyse-statique)
+- [Partie 2 : Analyse dynamique](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/Cracking/Tr%C3%A8s%20facile/ELF%20x86%20-%200%20protection/readme.md#partie-2--analyse-dynamique)
 
 ## Partie 1 : Analyse de l'exécution
 
@@ -18,7 +18,7 @@ On nous demande de saisir un nom d'utilisateur. L'utilisateur **_azerty_** n'exi
 
 Analysons alors son contenu.
 
-## Partie 2 : Analyse statique
+## Partie 2 : Analyse dynamique
 
 Utilisons la commande **file** pour connaître les caractéristiques de ce fichier exécutable : 
 
@@ -32,3 +32,4 @@ Il faut trouver le point d'entrée du programme. L'outil **gdb-peda** va nous pe
 
 ![Screenshot](./assets/images/gdb_ch2_1.png?raw=true)
 
+Un point d'entrée est disponible : **0x8048150**. Plaçons un breakpoint pour plus tard, et concentrons-n
