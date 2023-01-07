@@ -40,4 +40,5 @@ Nous y voyons << **Bien joue, vous pouvez valider l'epreuve avec le pass : %s!**
 
 ![Screenshot](./assets/images/flag_ch1.png?raw=true)
 
+Bingo ! Le challenge porte bien son nom...
 
