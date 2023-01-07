@@ -30,7 +30,7 @@ La commande **size** va nous permettre de savoir la taille des différentes sect
 
 ![Screenshot](./assets/images/size_command_ch1.png?raw=true)
 
-La section la section *.data* contient 296 octets de données initialisées. Peut-être que quelques-uns de ces octets représentent le mot de passe hardcodé dans une variable ? 
+La section **.data** contient 296 octets de données initialisées. Peut-être que quelques-uns de ces octets représentent le mot de passe hardcodé dans une variable ? 
 
 Pour nous en convaincre, utilisons la commande **strings** afin de filtrer toutes les chaînes de caractères présentes dans le programme.
 
