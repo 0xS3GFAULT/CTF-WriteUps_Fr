@@ -26,18 +26,8 @@ Utilisons la commande **file** pour connaître les caractéristiques de ce fichi
 
 Nous pouvons y lire **not stripped** ce qui signifie que les informations de debug sont toujours présentes: nous devrions y trouver des noms de fonctions et de variables, qui ont été sûrement initialisées.
 
-La commande **size** va nous permettre de savoir la taille des différentes sections de notre programme. Ainsi, nous pourrons savoir si cette dernière contient de la donnée initialisée :
+Cependant, nous ne pouvons pas utiliser la commande **strings** comme au challenge [ELF x86 - 0 protection]() puisqu'il y a bien trop de données à scanner. Tentons d'analyser le code de la section **.text**.
 
-![Screenshot](./assets/images/size_command_ch1.png?raw=true)
+Il faut trouver le point d'entrée du programme. L'outil **gdb-peda** va nous permettre de nous simplifier la tâche avec la commande **info files**:
 
-La section **.data** contient 296 octets de données initialisées. Peut-être que quelques-uns de ces octets représentent le mot de passe hardcodé dans une variable ? 
 
-Pour nous en convaincre, utilisons la commande **strings** afin de filtrer toutes les chaînes de caractères présentes dans le programme.
-
-![Screenshot](./assets/images/strings_command_ch1.png?raw=true)
-
-Nous y voyons << **Bien joue, vous pouvez valider l'epreuve avec le pass : %s!** >> ainsi qu'une chaîne qui s'apparente à un mot de passe relativement peu protégé : << **123456789** >>. Est-ce bien le bon mot de passe ? Il n'y a qu'un moyen de le savoir...
-
-![Screenshot](./assets/images/flag_ch1.png?raw=true)
-
-Bingo ! Le challenge porte bien son nom...
