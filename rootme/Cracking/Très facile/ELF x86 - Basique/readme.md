@@ -26,8 +26,14 @@ Utilisons la commande **file** pour connaître les caractéristiques de ce fichi
 
 Nous pouvons y lire **not stripped** ce qui signifie que les informations de debug sont toujours présentes: nous devrions y trouver des noms de fonctions et de variables, qui ont été sûrement initialisées.
 
-Cependant, nous ne pouvons pas utiliser la commande **strings** comme au challenge [ELF x86 - 0 protection]() puisqu'il y a bien trop de données à scanner. Tentons d'analyser le code de la section **.text**.
+Cependant, nous ne pouvons pas utiliser la commande **strings** comme au challenge [ELF x86 - 0 protection](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/tree/main/rootme/Cracking/Tr%C3%A8s%20facile/ELF%20x86%20-%200%20protection) puisqu'il y a bien trop de données à scanner. Tentons d'analyser le code de la section **.text**.
 
 Avec l'outil **objdump**, il est possible de désassembler le code exécutable. Si le programme a été compilé avec **gcc**, c'est qu'il y a forcément une fonction **main**. Vérifions : 
 
-![Screenshot](./assets/images/objdump_ch2.png?raw=true)
+![Screenshot](./assets/images/objdump_ch2_1.png?raw=true)
+![Screenshot](./assets/images/objdump_ch2_2.png?raw=true)
+
+Une fonction **main** existe bien ! C'est notre point d'entrée du programme.
+
+En analysant légèrement la fonction, nous pouvons faire plusieurs hypothèses.
+```804835e:	e8 07 ff ff ff       	call   804826a <getString>``` et ```804838e:	e8 d7 fe ff ff       	call   804826a <getString>``` représentent les appels de la fonction **getString** qui pourrait nous servir à demander le nom d'utilisateur et probablement son mot de passe. 
