@@ -57,3 +57,10 @@ Il suffit alors de duper la machine en esquivant cette comparaison. Plusieurs po
 Nous allons alors choisir la seconde option et utiliser l'outil **ghex** pour modifier les données.
 
 ##  Partie 3 : Cracking de l'exécutable
+Voici les deux instructions à remplacer par des **NOP**:
+
+```804837a:	75 54                	jne    80483d0 <main+0xc7>```
+
+```80483aa:	75 16                	jne    80483c2 <main+0xb9>```
+
+Ces deux instructions font 2 octets chacun, il va donc falloir écrire 2 **NOP** à l'adresse **0x804837a** et 2 **NOP** à l'adresse **0x80483aa**.
