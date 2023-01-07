@@ -4,4 +4,6 @@
 |----------------|------------|--------|
 |     [g0uZ](https://www.root-me.org/g0uZ?lang=fr)       | Très facile|   5    |
 
-/1.JPG
+## Partie 1 : Analyse de l'exécution
+
+Après avoir donné les droits d'exécution, exécutons le programme ch1.bin : 
