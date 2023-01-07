@@ -22,7 +22,7 @@ Analysons alors son contenu.
 
 Utilisons la commande **file** pour connaître les caractéristiques de ce fichier exécutable : 
 
-![Screenshot](./assets/images/file_command_ch1.png?raw=true)
+![Screenshot](./assets/images/file_ch2.png?raw=true)
 
 Nous pouvons y lire **not stripped** ce qui signifie que les informations de debug sont toujours présentes: nous devrions y trouver des noms de fonctions et de variables, qui ont été sûrement initialisées.
 
