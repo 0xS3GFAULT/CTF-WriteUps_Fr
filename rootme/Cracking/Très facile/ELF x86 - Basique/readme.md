@@ -52,7 +52,7 @@ Ces deux lignes représentent les appels de la fonction **strcmp** qui nous serv
 
 Il suffit alors de duper la machine en esquivant cette comparaison. Plusieurs possibilités s'offrent à nous, telles que : 
 - Modifier le registre **RAX** en lui donnant la valeur 0 après l'appel de **strcmp**
-- Remplacer les tests de **RAX** par des **NOP** (d'opcode **0x90**)
+- Remplacer les sauts conditionnels **jne** *(jump if not equal)* à la suite des tests de **RAX** par des **NOP** (d'opcode **0x90**)
 
 Nous allons alors choisir la seconde option et utiliser l'outil **ghex** pour modifier les données.
 
