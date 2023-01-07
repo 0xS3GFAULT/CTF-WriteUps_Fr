@@ -28,3 +28,6 @@ Nous pouvons y lire **not stripped** ce qui signifie que les informations de deb
 
 Cependant, nous ne pouvons pas utiliser la commande **strings** comme au challenge [ELF x86 - 0 protection]() puisqu'il y a bien trop de données à scanner. Tentons d'analyser le code de la section **.text**.
 
+Avec l'outil **objdump**, il est possible de désassembler le code exécutable. Si le programme a été compilé avec **gcc**, c'est qu'il y a forcément une fonction **main**. Vérifions : 
+
+![Screenshot](./assets/images/objdump_ch2.png?raw=true)
