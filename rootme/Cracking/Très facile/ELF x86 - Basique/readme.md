@@ -36,4 +36,21 @@ Avec l'outil **objdump**, il est possible de désassembler le code exécutable. 
 Une fonction **main** existe bien ! C'est notre point d'entrée du programme.
 
 En analysant légèrement la fonction, nous pouvons faire plusieurs hypothèses.
-```804835e:	e8 07 ff ff ff       	call   804826a <getString>``` et ```804838e:	e8 d7 fe ff ff       	call   804826a <getString>``` représentent les appels de la fonction **getString** qui pourrait nous servir à demander le nom d'utilisateur et probablement son mot de passe. 
+
+```804835e:	e8 07 ff ff ff       	call   804826a <getString>```
+
+```804838e:	e8 d7 fe ff ff       	call   804826a <getString>``` 
+
+Ces deux lignes représentent les appels de la fonction **getString** qui pourrait nous servir à saisir respectivement le nom d'utilisateur et probablement son mot de passe. 
+
+```8048373:	e8 78 7f 00 00       	call   80502f0 <strcmp>```
+
+```80483a3:	e8 48 7f 00 00       	call   80502f0 <strcmp>```
+
+Ces deux lignes représentent les appels de la fonction **strcmp** qui nous servirait à comparer respectivement le nom d'utilisateur et le mot de passe avec d'autres chaînes de caractères. Si la comparaison est bonne, **strcmp** retourne 0 dans le registre **RAX**. Sinon, **strcmp** retourne un nombre négatif ou positif différent de 0 dans **RAX**. 
+
+Il suffit alors de duper la machine en esquivant cette comparaison. Plusieurs possibilités s'offrent à nous, telles que : 
+- Modifier le registre **RAX** en lui donnant la valeur 0 après l'appel de **strcmp**
+- Remplacer les tests de **RAX** par des **NOP** (d'opcode **0x90**)
+
+Nous allons alors choisir la seconde option et utiliser l'outil **ghex** pour modifier les données.
