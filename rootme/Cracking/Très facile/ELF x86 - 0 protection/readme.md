@@ -26,4 +26,4 @@ Utilisons la commande **file** pour connaître les caractéristiques de ce fichi
 
 Nous pouvons y lire **not stripped** ce qui signifie que les informations de debug sont toujours présentes: nous devrions y trouver des noms de fonctions et de variables, qui ont été sûrement initialisées.
 
-La commande **size** va nous permettre de savoir si le programme contient de la donnée initialisée :
+La commande **size** va nous permettre de savoir la taille des différentes sections de notre programme. Ainsi, nous pourrons savoir si cette dernière contient de la donnée initialisée :
