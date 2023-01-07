@@ -54,3 +54,5 @@ Il suffit alors de duper la machine en esquivant cette comparaison. Plusieurs po
 - Remplacer les tests de **RAX** par des **NOP** (d'opcode **0x90**)
 
 Nous allons alors choisir la seconde option et utiliser l'outil **ghex** pour modifier les données.
+
+##  Partie 3 : Cracking de l'exécutable
