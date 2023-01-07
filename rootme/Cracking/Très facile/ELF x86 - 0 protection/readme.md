@@ -36,3 +36,8 @@ Pour nous en convaincre, utilisons la commande **strings** afin de filtrer toute
 
 ![Screenshot](./assets/images/strings_command_ch1.png?raw=true)
 
+Nous y voyons << **Bien joue, vous pouvez valider l'epreuve avec le pass : %s!** >> ainsi qu'une chaîne qui s'apparente à un mot de passe relativement peu protégé : << **123456789** >>. Est-ce bien le bon mot de passe ? Il n'y a qu'un moyen de le savoir...
+
+![Screenshot](./assets/images/flag_ch1.png?raw=true)
+
+
