@@ -1,4 +1,4 @@
-# ELF x86 - 0 protection
+# ELF x86 - Basique
 
 | Auteur/Autrice | Difficulté | Points |
 |----------------|------------|--------|
@@ -10,11 +10,11 @@
 
 ## Partie 1 : Analyse de l'exécution
 
-Après avoir donné les droits d'exécution, exécutons le programme [ch1.bin](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/Cracking/Tr%C3%A8s%20facile/ELF%20x86%20-%200%20protection/ch1.bin) : 
+Après avoir donné les droits d'exécution, exécutons le programme [ch1.bin]() : 
 
-![Screenshot](./assets/images/exec_ch1.png?raw=true)
+![Screenshot](./assets/images/exec_ch2.png?raw=true)
 
-On nous demande de saisir un mot de passe. Bien évidemment, **_azerty_** ne fonctionne pas... Et le programme se ferme. 
+On nous demande de saisir un nom d'utilisateur. L'utilisateur **_azerty_** n'existe pas... Et le programme se ferme. 
 
 Analysons alors son contenu.
 
