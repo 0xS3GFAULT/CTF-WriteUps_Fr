@@ -66,3 +66,9 @@ Voici les deux instructions à remplacer par des **NOP**:
 Ces deux instructions font 2 octets chacun, il va donc falloir écrire 2 **NOP** à l'adresse **0x804837a** et 2 **NOP** à l'adresse **0x80483aa**.
 
 ![Screenshot](./assets/images/ghex_ch2.png?raw=true)
+
+Et il n'y a plus qu'à tester...
+
+![Screenshot](./assets/images/flag_ch2.png?raw=true)
+
+Le programme nous demande le nom d'utilisateur... puis le mot de passe, alors qu'on nous le refusait avant ! Puisque les sauts conditionnels sont enlevés, on peut saisir n'importe quoi. Et le tour et joué !
