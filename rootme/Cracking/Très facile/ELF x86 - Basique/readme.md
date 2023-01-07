@@ -71,4 +71,4 @@ Et il n'y a plus qu'à tester...
 
 ![Screenshot](./assets/images/flag_ch2.png?raw=true)
 
-Le programme nous demande le nom d'utilisateur... puis le mot de passe, alors qu'on nous le refusait avant ! Puisque les sauts conditionnels sont enlevés, on peut saisir n'importe quoi. Et le tour et joué !
+Le programme nous demande le nom d'utilisateur... puis le mot de passe, alors qu'on nous le refusait avant ! Puisque les sauts conditionnels sont enlevés, on peut saisir n'importe quoi. Et le tour est joué !
