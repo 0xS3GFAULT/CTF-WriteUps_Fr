@@ -64,3 +64,5 @@ Voici les deux instructions à remplacer par des **NOP**:
 ```80483aa:	75 16                	jne    80483c2 <main+0xb9>```
 
 Ces deux instructions font 2 octets chacun, il va donc falloir écrire 2 **NOP** à l'adresse **0x804837a** et 2 **NOP** à l'adresse **0x80483aa**.
+
+![Screenshot](./assets/images/ghex_ch2.png?raw=true)
