@@ -91,7 +91,7 @@ D'après la page **man** de **ptrace**,
 
 C'est un appel système utilisable uniquement sur Linux. Le premier argument de **ptrace** est 0, ce qui se caractérise par **PTRACE_TRACEME**. La page **man** nous dit : 
 
-> Le processus en cours va être suivi par son père. Tout signal (sauf SIGKILL) reçu par le processus l'arrêtera, et le père sera notifié grâce à wait(2) [...] Un processus ne doit pas envoyer cette requête si son père n'est pas prêt à le suivre. Dans cette requête, pid, addr et data sont ignorés. La requête ci-dessus ne sert que dans le processus fils. [...] Par la suite, pid précise le fils sur lequel agir.
+> Le processus en cours va être suivi par son père. [...] Un processus ne doit pas envoyer cette requête si son père n'est pas prêt à le suivre. Dans cette requête, pid, addr et data sont ignorés. La requête ci-dessus ne sert que dans le processus fils. [...] Par la suite, pid précise le fils sur lequel agir. [...] Pour les requêtes PTRACE_PEEK*, ptrace() renvoie la valeur réclamée et zéro pour les autres requêtes, ou -1 en cas d'échec en remplissant errno avec le code d'erreur. Comme la valeur renvoyée par une requête PTRACE_PEEK* peut légitimement être -1, il faut vérifier errno après un tel appel pour vérifier si une erreur s'est produite.  
 
 En fait **gdb-peda**, qui est le débogueur, agit comme un processus père du programme **ch3.bin**. **gdb-peda** va s'attacher à un processus (donc son enfant) au début de l'exécution en utilisant l'appel système **ptrace**. Le problème, c'est que seul un processus peut utiliser **ptrace** à la fois, et c'est **gdb-peda** qui l'utilise en premier. Le processus enfant ne pourra donc pas utiliser l'appel système **ptrace** à ce moment-là, d'où le retour à valeur négative de cet appel système.
 
