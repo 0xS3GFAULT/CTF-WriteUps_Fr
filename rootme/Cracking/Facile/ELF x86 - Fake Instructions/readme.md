@@ -56,7 +56,7 @@ Désassemblons cette fonction **WPA** :
 
 Oh, voilà quelque chose d'intéressant ! ```0x080486f5 <+49>:	call   0x804847c <strcmp@plt>``` va comparer l'argument de la commande avec une chaîne de caractères nouvellement créée.
 
-Si la comparaison est bonne, alors une nouvelle fonction nommée **blowfish** sera exécutée, puis le programme s'arrête. Sinon, c'est la fonction **RS4** qui sera exécutée.
+Si la comparaison est bonne, alors une nouvelle fonction nommée **blowfish** sera exécutée, puis le programme s'arrêta. Sinon, c'est la fonction **RS4** qui sera exécutée.
 
 Mais que font ces deux fonctions ? Nous supposons que **blowfish** est la fonction qui valide le mot de passe, et que **RS4** est la fonction qui affiche le message d'erreur si le mot de passe est incorrect, à la suite de la comparaison avec **strcmp**. Appelons **RS4** : 
 
