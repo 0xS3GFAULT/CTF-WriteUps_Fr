@@ -128,7 +128,7 @@ ne seront jamais exécutées, et à la place on y exécute ceci :
 0x804849b <main+171>:	mov    eax,DWORD PTR [ebp-0xc]
 ```
 
-Ce qui va permettre de charger **DL** par le premier caractère du mot de passe saisi, et **EAX** par l'adresse d'une étrange chaîne de caractères '**ksuiealohgy**' : 
+Ce qui va permettre de charger **DL** par le premier caractère du mot de passe saisi *(0x61 -> 'a')*, et **EAX** par l'adresse d'une étrange chaîne de caractères '**ksuiealohgy**' : 
 
 ![Screenshot](./assets/images/gdb_ch3_4.png?raw=true)
 
