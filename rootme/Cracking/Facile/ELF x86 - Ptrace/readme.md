@@ -33,11 +33,15 @@ Y-a t'il une fonction **main** ?  Vérifions-le à l'aide de la commande ```objd
 ![Screenshot](./assets/images/objdump_ch3_1.png?raw=true)
 ![Screenshot](./assets/images/objdump_ch3_2.png?raw=true)
 
-Très bien, nous avons un point d'entrée. En analysant rapidement la fonction, nous ne trouvons pas d'appels de **strcmp** ni dans la fonction **main** ni dans le symbole **_notng**. La fonction **fgets** est appelée à la fin du **main**: ```8048486:	e8 05 0b 00 00       	call   8048f90 <_IO_fgets>``` afin de demander à l'utilisateur de saisir le mot de passe.
+Très bien, nous avons un point d'entrée. En analysant rapidement la fonction, nous ne trouvons pas d'appels de **strcmp** ni dans la fonction **main** ni dans le symbole **_notng**. La fonction **fgets** est appelée à la fin du **main**: 
 
-Une mystérieuse fonction **ptrace** est appelée en début de fonction **main** : ```8048410:	e8 5b 06 01 00       	call   8058a70 <ptrace>```. Nous nous y pencherons plus tard. 
+```8048486:	e8 05 0b 00 00       	call   8048f90 <_IO_fgets>``` 
 
-En fin de fonction **main** nous avons également ceci : 
+afin de demander à l'utilisateur de saisir le mot de passe. Une mystérieuse fonction **ptrace** est appelée en début de fonction **main** : 
+
+```8048410:	e8 5b 06 01 00       	call   8058a70 <ptrace>```. 
+
+Nous nous y pencherons plus tard. En fin de fonction **main** nous avons également ceci : 
 
 ```804848e:	8d 05 97 84 04 08    	lea    eax,ds:0x8048497
  8048494:	40                   	inc    eax
