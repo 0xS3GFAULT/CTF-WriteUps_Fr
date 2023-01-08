@@ -6,8 +6,8 @@
 
 ## Sommaire
 - [Partie 1 : Analyse de l'exécution](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/Cracking/Facile/ELF%20x86%20-%20Fake%20Instructions/readme.md#partie-1--analyse-de-lex%C3%A9cution)
-- [Partie 2 : Analyse statique](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/Cracking/Facile/ELF%20x86%20-%20Fake%20Instructions/readme.md#partie-1--analyse-statique)
-- [Partie 3 : Analyse dynamique](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/Cracking/Facile/ELF%20x86%20-%20Fake%20Instructions/readme.md#partie-1--analyse-dynamique)
+- [Partie 2 : Analyse statique](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/Cracking/Facile/ELF%20x86%20-%20Fake%20Instructions/readme.md#partie-2--analyse-statique)
+- [Partie 3 : Analyse dynamique](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/Cracking/Facile/ELF%20x86%20-%20Fake%20Instructions/readme.md#partie-2--analyse-statique)
 
 ## Partie 1 : Analyse de l'exécution
 
