@@ -137,13 +137,13 @@ A partir de ce moment précis, plusieurs comparaisons vont être faites dans le 
 ![Screenshot](./assets/images/gdb_ch3_5.png?raw=true)
 
 Pour que le programme nous affiche le flag, il faut que :
-- Le premier caractère de notre saisie corresponde avec le 5ème caractère de l'étrange chaîne : '**e**'
-- Le second caractère de notre saisie corresponde avec le 6ème caractère de l'étrange chaîne : '**a**'
-- Le troisième caractère de notre saisie corresponde avec le 2ème caractère de l'étrange chaîne : '**s**'
-- Le quatrième caractère de notre saisie corresponde avec le dernier caractère de l'étrange chaîne : '**y**'
+- Le 1er caractère de notre saisie corresponde avec le 5ème caractère de l'étrange chaîne : '**e**'
+- Le 2ème caractère de notre saisie corresponde avec le 6ème caractère de l'étrange chaîne : '**a**'
+- Le 3ème caractère de notre saisie corresponde avec le 2ème caractère de l'étrange chaîne : '**s**'
+- Le 4ème caractère de notre saisie corresponde avec le dernier caractère de l'étrange chaîne : '**y**'
 
 Nous supposons alors que le mot de passe est '**easy**'. Vérifions : 
 
-![Screenshot](./assets/images/flag_ch3_5.png?raw=true)
+![Screenshot](./assets/images/flag_ch3.png?raw=true)
 
 Bingo ! Le mot de passe saisi est notre flag.
