@@ -65,7 +65,8 @@ En fait, il faut reprendre l'appel de la fonction mystérieuse **ptrace** pour l
  8048410:	e8 5b 06 01 00       	call   8058a70 <ptrace>
  8048415:	83 c4 10             	add    esp,0x10
  8048418:	85 c0                	test   eax,eax
- 804841a:	79 1a                	jns    8048436 <main+0x46>```
+ 804841a:	79 1a                	jns    8048436 <main+0x46>
+ ```
 
 En langage C, ça se traduit littéralement par :
 
@@ -76,7 +77,8 @@ En langage C, ça se traduit littéralement par :
 else
 {
 	// Erreur
-}```
+}
+```
 
 D'après la page **man** de **ptrace**, 
 
@@ -110,12 +112,14 @@ Les trois instructions :
 
 ```0x8048497 <main+167>:	mov    eax,0x8bea558a
 0x804849c <main+172>:	inc    ebp
-0x804849d <main+173>:	hlt```
+0x804849d <main+173>:	hlt
+```
 
 ne seront jamais exécutées, et à la place on y exécute ceci :
 
 ```0x8048498 <main+168>:	mov    dl,BYTE PTR [ebp-0x16]
-0x804849b <main+171>:	mov    eax,DWORD PTR [ebp-0xc]```
+0x804849b <main+171>:	mov    eax,DWORD PTR [ebp-0xc]
+```
 
 Ce qui va permettre de charger **DL** par le premier caractère du mot de passe saisi, et **EAX** par l'adresse d'une étrange chaîne de caractères **ksuiealohgy** : 
 
