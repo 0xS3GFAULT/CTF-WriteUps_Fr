@@ -103,7 +103,7 @@ L'appel de **ptrace** à l'adresse **0x8048410** fait 5 octets : ```e8 5b 06 01 
 
 Voilà ce qu'il faudra écrire à l'adresse **0x8048410** : ```31 c0 90 90 90```
 
-![Screenshot](./assets/images/ghex_ch3_1.png?raw=true)
+![Screenshot](./assets/images/ghex_ch3.png?raw=true)
 
 Retournons maintenant sur **gdb-peda**, et relançons le programme depuis l'adresse du **main** :
 
