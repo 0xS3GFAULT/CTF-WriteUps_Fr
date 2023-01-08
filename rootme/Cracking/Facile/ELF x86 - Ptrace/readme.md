@@ -41,7 +41,8 @@ En fin de fonction **main** nous avons également ceci :
 
 ```804848e:	8d 05 97 84 04 08    	lea    eax,ds:0x8048497
  8048494:	40                   	inc    eax
- 8048495:	ff e0                	jmp    eax```
+ 8048495:	ff e0                	jmp    eax
+ ```
 
 Donc **EAX** est chargé par l'adresse **0x8048497** qui représente l'adresse du symbole **_notng**, et ... on incrémente **EAX** pour ensuite ramener **RIP** à cette adresse ? Mais que représente l'instruction à l'adresse **0x8048498** ?
 
