@@ -99,7 +99,7 @@ Il suffit alors de contourner cet appel, en le modifiant par une mise à 0 de **
 
 ## Partie 4 : Cracking de l'exécutable
 
-L'appel de **ptrace** à l'adresse **0x8048410** fait 5 octets : ```e8 5b 06 01 00```. On pourrait utiliser l'instruction ```xor eax,eax``` pour mettre le registre **EAX** à 0. Cette instruction ne fait que 2 octets : ```31 c0```. Nous avons donc 2 octets à modifier sur les 5 octets au total. Il va reste 3 octets qui ne nous servirons à rien , nous pourrons les remplacer par les **NOP** (d'opcode **0x90**).
+L'appel de **ptrace** à l'adresse **0x8048410** fait 5 octets : ```e8 5b 06 01 00```. On pourrait utiliser l'instruction ```xor eax,eax``` pour mettre le registre **EAX** à 0. Cette instruction ne fait que 2 octets : ```31 c0```. Nous avons donc 2 octets à modifier sur les 5 octets au total. Il va rester 3 octets qui ne nous servirons à rien , nous pourrons les remplacer par des **NOP** (d'opcode **0x90**).
 
 Voilà ce qu'il faudra écrire à l'adresse **0x8048410** : ```31 c0 90 90 90```
 
