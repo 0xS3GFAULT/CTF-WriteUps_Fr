@@ -58,7 +58,7 @@ Plaçons un breakpoint à l'adresse de **main** et lançons le programme :
 
 ![Screenshot](./assets/images/gdb_ch3_1.png?raw=true)
 
-Argh ! Le message **Debugger detecté ... Exit** s'affiche avant de stopper notre programme. On nous espionne ??
+Argh ! Le message '**Debugger detecté ... Exit**' s'affiche avant de stopper notre programme. On nous espionne ??
 
 En fait, il faut reprendre l'appel de la fonction mystérieuse **ptrace** pour le comprendre : 
 
