@@ -5,10 +5,9 @@
 |     [kmkz](https://www.root-me.org/kmkz?lang=fr)       |Facile|   15    |     
 
 ## Sommaire
-- [Partie 1 : Analyse de l'exécution]()
-- [Partie 2 : Analyse statique]()
-- [Partie 3 : Analyse dynamique]()
-- [Partie 4 : Cracking de l'exécutable]()
+- [Partie 1 : Analyse de l'exécution](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/Cracking/Facile/ELF%20x86%20-%20Fake%20Instructions/readme.md#partie-1--analyse-de-lex%C3%A9cution)
+- [Partie 2 : Analyse statique](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/Cracking/Facile/ELF%20x86%20-%20Fake%20Instructions/readme.md#partie-1--analyse-statique)
+- [Partie 3 : Analyse dynamique](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/Cracking/Facile/ELF%20x86%20-%20Fake%20Instructions/readme.md#partie-1--analyse-dynamique)
 
 ## Partie 1 : Analyse de l'exécution
 
@@ -39,7 +38,7 @@ On y voit du **memcpy**, du **malloc**, du **printf**... Mais à l'adresse **0x8
 
 ```80486a4:	ff d2                	call   edx```
 
-Le registre **EDX** est chargée d'une adresse d'une certaine fonction qui sera ensuite appelée. Mais quelle est cette fonction ? Utilisons **gdb-peda** pour le savoir.
+Le registre **EDX** est chargé d'une adresse d'une certaine fonction qui sera ensuite appelée. Mais quelle est cette fonction ? Utilisons **gdb-peda** pour le savoir.
 
 ## Partie 3 : Analyse dynamique
 
