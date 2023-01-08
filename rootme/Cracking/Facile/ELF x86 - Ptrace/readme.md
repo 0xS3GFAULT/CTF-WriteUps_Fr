@@ -74,7 +74,8 @@ En fait, il faut reprendre l'appel de la fonction mystérieuse **ptrace** pour l
 
 En langage C, ça se traduit littéralement par :
 
-```if(ptrace(0,0,1,0)>0)
+```
+if(ptrace(0,0,1,0)>0)
 {
 	// OK
 }
