@@ -8,7 +8,7 @@
 - [Partie 1 : Analyse de l'exécution](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/tree/main/rootme/Cracking/Facile/ELF%20x86%20-%20Ptrace#partie-1--analyse-de-lex%C3%A9cution)
 - [Partie 2 : Analyse statique](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/tree/main/rootme/Cracking/Facile/ELF%20x86%20-%20Ptrace#partie-2--analyse-statique)
 - [Partie 3 : Analyse dynamique](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/tree/main/rootme/Cracking/Facile/ELF%20x86%20-%20Ptrace#partie-3--analyse-dynamique)
-- [Partie 4 : Cracking de l'exécutable]()
+- [Partie 4 : Cracking de l'exécutable](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/tree/main/rootme/Cracking/Facile/ELF%20x86%20-%20Ptrace#partie-4--cracking-de-lex%C3%A9cutable)
 
 ## Partie 1 : Analyse de l'exécution
 
