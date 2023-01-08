@@ -6,7 +6,7 @@
 
 ## Sommaire
 - [Partie 1 : Analyse de l'exécution](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/Cracking/Tr%C3%A8s%20facile/ELF%20x86%20-%20Basique/readme.md#partie-1--analyse-de-lex%C3%A9cution)
-- [Partie 2 : Analyse statique](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/Cracking/Tr%C3%A8s%20facile/ELF%20x86%20-%20Basique/readme.md#partie-1--analyse-statique)
+- [Partie 2 : Analyse statique](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/Cracking/Tr%C3%A8s%20facile/ELF%20x86%20-%20Basique/readme.md#partie-2--analyse-statique)
 - [Partie 3 : Cracking de l'exécutable](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/Cracking/Tr%C3%A8s%20facile/ELF%20x86%20-%20Basique/readme.md#partie-3--cracking-de-lex%C3%A9cutable)
 
 ## Partie 1 : Analyse de l'exécution
