@@ -146,4 +146,4 @@ Nous supposons alors que le mot de passe est '**easy**'. Vérifions :
 
 ![Screenshot](./assets/images/flag_ch3.png?raw=true)
 
-Bingo ! Le mot de passe saisi est notre flag.
+Bingo ! Le mot de passe saisi est d'ailleurs notre flag.
