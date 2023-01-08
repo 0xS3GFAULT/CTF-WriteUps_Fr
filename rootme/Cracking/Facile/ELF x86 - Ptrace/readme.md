@@ -115,14 +115,16 @@ Nous avons réussi à esquiver l'appel de **ptrace** et le programme nous demand
 
 Les trois instructions :
 
-```0x8048497 <main+167>:	mov    eax,0x8bea558a
+```
+0x8048497 <main+167>:	mov    eax,0x8bea558a
 0x804849c <main+172>:	inc    ebp
 0x804849d <main+173>:	hlt
 ```
 
 ne seront jamais exécutées, et à la place on y exécute ceci :
 
-```0x8048498 <main+168>:	mov    dl,BYTE PTR [ebp-0x16]
+```
+0x8048498 <main+168>:	mov    dl,BYTE PTR [ebp-0x16]
 0x804849b <main+171>:	mov    eax,DWORD PTR [ebp-0xc]
 ```
 
