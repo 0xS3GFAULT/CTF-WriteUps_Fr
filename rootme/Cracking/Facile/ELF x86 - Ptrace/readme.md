@@ -48,7 +48,7 @@ Nous nous y pencherons plus tard. En fin de fonction **main** nous avons égalem
  8048495:	ff e0                	jmp    eax
  ```
 
-Donc **EAX** est chargé par l'adresse **0x8048497** qui représente l'adresse du symbole **_notng**, et ... on incrémente **EAX** pour ensuite ramener **RIP** à cette adresse ? Mais que représente l'instruction à l'adresse **0x8048498** ?
+Donc **EAX** est chargé par l'adresse **0x8048497** qui représente l'adresse du symbole **_notng**, et ... on incrémente **EAX** pour ensuite ramener **RIP** à cette adresse... Mais que représente l'instruction à l'adresse **0x8048498** ?
 
 Pour le savoir, utilisons **gdb-peda**.
 
