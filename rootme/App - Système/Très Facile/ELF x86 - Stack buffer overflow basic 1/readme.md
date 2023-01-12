@@ -53,7 +53,7 @@ En effet, en passant une taille trop grande à **fgets**, cette dernière s'atte
 
 La fonction **fgets** nous permet d'écrire à partir de la position **RBP-0x30**. Donc Il faudra remplir la pile (par exemple par des **'A'** de code ascii **0x41**) sur une zone de ```0x30 - 0x8 = 40 octets``` afin d'accéder directement à l'injection de **0xdeadbeef** dans la variable **check** : 
 
-![Screenshot](./assets/images/pile_ch13_3.png?raw=true)
+![Screenshot](./assets/images/pile_ch13_3.JPG?raw=true)
 
 En utilisant par exemple le langage de programmation Python, nous pouvons construire le payload à injecter dans stdin : ```'A'*40+'\xef\xbe\xad\xde'```
 
