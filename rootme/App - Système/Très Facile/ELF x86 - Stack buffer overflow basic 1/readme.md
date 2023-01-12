@@ -44,8 +44,8 @@ char buf[40];
 
 En redessinant grossièrement la pile de la fonction **main** à la ligne 11, nous avons ceci : 
 
-![Screenshot](./assets/images/pile_ch13_1.jpg?raw=true)
-![Screenshot](./assets/images/pile_ch13_2.jpg?raw=true)
+![Screenshot](./assets/images/pile_ch13_1.JPG?raw=true)
+![Screenshot](./assets/images/pile_ch13_2.JPG?raw=true)
 
 La fonction ```fgets(buf,45,stdin);``` à la ligne 13 permet de remplir la zone mémoire du buf[40] en position **RBP-0x30** dans la pile de 44 octets maximum (le 45ème octet est pour le **'\0'** de fin de chaîne.) Mais... notre buffer ne fait que 40 octets... Il y a un problème non ? 
 
