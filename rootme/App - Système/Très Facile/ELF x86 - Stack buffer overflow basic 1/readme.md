@@ -52,7 +52,7 @@ On y insère les valeurs connues :
 
 La fonction ```fgets(buf,45,stdin);``` à la ligne 13 permet de remplir la zone mémoire du buf[40] en position **RBP-0x30** dans la pile de 44 octets maximum (le 45ème octet est pour le **'\0'** de fin de chaîne.) Mais... notre buffer ne fait que 40 octets... Il y a un problème non ? 
 
-En effet, en passant une taille trop grande à **fgets**, cette dernière s'attendra à ce que notre buffer soit plus grand qu'il ne l'est réellement, et pourra réecrire plus haut dans la pile ! Il faut exploiter cette faille là pour produire un buffer overflow et réecrire dans la variable **check** en position **RBP-0x8** (jusqu'à **RBP-0x4** donc 4 les 4 octets de **0xdeadbeef**). 
+En effet, en passant une taille trop grande à **fgets**, cette dernière s'attendra à ce que notre buffer soit plus grand qu'il ne l'est réellement, et pourra réecrire plus haut dans la pile ! Il faut exploiter cette faille là pour produire un buffer overflow et réecrire dans la variable **check** en position **RBP-0x8** (jusqu'à **RBP-0x4** donc les 4 octets de **0xdeadbeef**). 
 
 La fonction **fgets** nous permet d'écrire à partir de la position **RBP-0x30**. Donc Il faudra remplir la pile (par exemple par des **'A'** de code ascii **0x41**) sur une zone de ```0x30 - 0x8 = 40 octets``` afin d'accéder directement à l'injection de **0xdeadbeef** dans la variable **check** : 
 
