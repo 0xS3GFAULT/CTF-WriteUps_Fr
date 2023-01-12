@@ -78,7 +78,7 @@ Et voilà ! On peut se ballader dans le shell qui a été lancé, il ne se ferme
 
 Une autre possibilité consistait à rediriger la position des lancements de scripts bash en utilisant la variable **$BASH_ENV**. Cette variable d'environnement sert à effectuer des commandes avant de lancer un script, à des fins de débogage par exemple.
 
-Dans cette variable, nous aurions pu y placer le chemin vers un script bash crée dans **/tmp**. Il faut savoir que tout le monde peut créer des fichiers dans le dossier **/tmp**. Que mettons-nous dans ce script bash situé dans **/tmp** ? Eh bien tout simplement la commande **cat .passwd**.
+Dans cette variable, nous aurions pu y placer le chemin vers un script bash crée dans **/tmp**. Il faut savoir que tout le monde peut créer des fichiers dans le dossier **/tmp**. Que mettons-nous dans ce script bash ? Eh bien tout simplement la commande **cat .passwd**.
 
 En faisant cela, nous demandons à la machine de lancer le script que nous avons crée dans **/tmp** avant de lancer n'importe quel autre script, notamment celui à la ligne 25 ```system("/bin/bash");```. Voici une démonstration : 
 
