@@ -68,11 +68,11 @@ Il ne reste plus qu'à exploiter la faille avec Python.
 
 Utilisons le payload en Python suivi d'un pipe afin d'injecter dans stdin ce que l'on souhaite :
 
-![Screenshot](./assets/images/exploit_ch13_1.png?raw=true)
+![Screenshot](./assets/images/exploit_ch13_1.png00?raw=true)
 
 Et ça marche ! Enfin presque... nous avons réussi mais le shell lancé se ferme instantanément, nous ne pouvons pas lire le fichier **.passwd**... Comment faire ? Il suffit de bloquer l'entrée standard stdin avec la commade **cat** suivi d'un tiret, comme tel ``` (commande;cat -) | programme``` : 
 
-![Screenshot](./assets/images/exploit_ch13_2.png?raw=true)
+![Screenshot](./assets/images/exploit_ch13_2.png00?raw=true)
 
 Et voilà ! On peut se ballader dans le shell qui a été lancé, il ne se ferme plus automatiquement car nous avons bloqué stdin. On demande à lire le fichier **.passwd** qui est détenu par *app-systeme-ch13-cracked* mais nous avons tous ses droits grâce à la ligne 24 ```setreuid(geteuid(), geteuid())```, le programme **ch13** est toujours en exécution même si nous sommes dans un nouveau shell. Le flag vient naturellement :)
 
@@ -82,6 +82,6 @@ Dans cette variable, nous aurions pu y placer le chemin vers un script bash cré
 
 En faisant cela, nous demandons à la machine de lancer le script que nous avons crée dans **/tmp** avant de lancer n'importe quel autre script, notamment celui à la ligne 25 ```system("/bin/bash");```. Voici une démonstration : 
 
-![Screenshot](./assets/images/exploit_ch13_3.png?raw=true)
+![Screenshot](./assets/images/exploit_ch13_3.png00?raw=true)
 
 C'est magique ;)
