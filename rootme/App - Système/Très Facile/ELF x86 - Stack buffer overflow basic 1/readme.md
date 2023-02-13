@@ -70,7 +70,7 @@ Utilisons le payload en Python suivi d'un pipe afin d'injecter dans stdin ce que
 
 ![Screenshot](./assets/images/exploit_ch13_1.png00?raw=true)
 
-Et ça marche ! Enfin presque... nous avons réussi mais le shell lancé se ferme instantanément, nous ne pouvons pas lire le fichier **.passwd**... Comment faire ? Il suffit de bloquer l'entrée standard stdin avec la commade **cat** suivi d'un tiret, comme tel ``` (commande;cat -) | programme``` : 
+Et ça marche ! Enfin presque... nous avons réussi mais le shell lancé se ferme instantanément, nous ne pouvons pas lire le fichier **.passwd**... Comment faire ? Il suffit de bloquer l'entrée standard stdin avec la commade **cat** suivi d'un tiret, comme tel ```(commande;cat -) | programme``` : 
 
 ![Screenshot](./assets/images/exploit_ch13_2.png00?raw=true)
 
