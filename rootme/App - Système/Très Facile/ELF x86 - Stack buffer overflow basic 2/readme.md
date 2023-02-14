@@ -39,7 +39,7 @@ La commande **file** nous indique que l'exécutable est sur 32 bits :
 
 Cela représente donc des adresses mémoires de 4 octets, ce qui est juste assez pour en écrire une dans nos 5 octets de buffer overflow :)
 
-Puisque ```var```, ```func``` et ```buf``` sont juxtaposés dans la mémoire et que ```buf``` vient avant dans la pile, on va pouvoir écrire la nouvelle adresse pointée par ```func``` qui est de 4 octets : c'est l'adresse de la fonction ```shell```. Mais comment trouver cette adresse ? Puisque les protections **ASLR**,**PIE** et **canary** sont désactivées, on peut directement l'avoir en regardant les symboles avec **nm** par exemple : 
+Puisque ```var```, ```func``` et ```buf``` sont juxtaposés dans la mémoire et que ```buf``` se situe dans les adresses les plus basses de la pile, on va pouvoir écrire la nouvelle adresse pointée par ```func``` qui est de 4 octets : c'est l'adresse de la fonction ```shell```. Mais comment trouver cette adresse ? Puisque les protections **ASLR**,**PIE** et **canary** sont désactivées, on peut directement l'avoir en regardant les symboles avec **nm** par exemple : 
 
 ![Screenshot](./assets/images/nm_ch15.png?raw=true)
 
