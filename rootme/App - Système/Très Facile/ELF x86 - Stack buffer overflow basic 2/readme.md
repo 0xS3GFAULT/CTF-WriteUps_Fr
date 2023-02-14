@@ -11,7 +11,7 @@
 
 ## Prérequis
 
-Ce challenge ne sera pas grandement détaillé mais il est conseillé d'aller voir le writeup [ELF x86 - Stack buffer overflow basic 1]() qui apportera plus d'informations sur la pile d'exécution.
+Ce challenge ne sera pas grandement détaillé mais il est conseillé d'aller voir le writeup [ELF x86 - Stack buffer overflow basic 1](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/tree/main/rootme/App%20-%20Syst%C3%A8me/Tr%C3%A8s%20Facile/ELF%20x86%20-%20Stack%20buffer%20overflow%20basic%201) qui est très similaire à celui-ci et qui apportera de plus amples informations sur la pile d'exécution.
 
 ## Partie 1 : Analyse de l'exécution
 
