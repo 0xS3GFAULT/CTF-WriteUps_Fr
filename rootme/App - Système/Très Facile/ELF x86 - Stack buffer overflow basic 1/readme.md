@@ -23,7 +23,7 @@ Exécutons le programme :
 
 Le programme nous demande de saisir quelque chose. Nous tapons '**azerty**', puis le programme nous retourne deux informations. Le buffer '**buf**' vaut **azerty** et l'élément '**check**' vaut **0x4030201**. Puis le programme se ferme...
 
-Nous n'avons pas spécialement beaucoup d'informations, mais le code source en langage C du programme compilé nous ai donné ! Analysons-le.
+Nous n'avons pas spécialement beaucoup d'informations, mais le code source en langage C du programme compilé nous est donné ! Analysons-le.
 
 ## Partie 2 : Analyse statique du code
 
