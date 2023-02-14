@@ -29,7 +29,7 @@ Nous n'avons pas spécialement beaucoup d'informations, mais le code source en l
 
 ![Screenshot](./assets/images/code_ch15_1.png?raw=true)
 
-La fonction **main** demande à l'utilisateur de saisir quelque chose avec la fonction **fgets**, et appelle la mystérieuse fonction **func**. En fait, ```void (*func)()=sup;``` (à la ligne 18) est un pointeur de fonction , qui pointe vers l'adresse de la fonction **sup**. C'est donc la fonction **sup** qui va être appelée à la ligne 21. Mais nous voyons rapidement que c'est la fonction **shell** qui nous intéresse, car elle nous permet de lancer le shell **/bin/bash** avec les mêmes droits que le possesseur du programme.
+La fonction **main** demande à l'utilisateur de saisir quelque chose grâce à la fonction **fgets**, et appelle la mystérieuse fonction **func**. En fait, ```void (*func)()=sup;``` (à la ligne 18) est un pointeur de fonction , qui pointe vers l'adresse de la fonction **sup**. C'est donc la fonction **sup** qui va être appelée à la ligne 21. Mais nous voyons rapidement que c'est la fonction **shell** qui nous intéresse, car elle nous permet de lancer le shell **/bin/bash** avec les mêmes droits que le possesseur du programme.
 
 Nous savons ce qu'il nous reste à faire : rediriger le pointeur de fonction **func** vers l'adresse de **shell** pour pouvoir l'appeler ! Mais est-ce vraiment réalisable ? Nous ne contrôlons que les 133 premiers octets en partant de l'adresse de **buffer**, grâce à ```fgets(buf,133,stdin);``` (à la ligne 20). Mais la taille de ```char buf[128];``` (à la ligne 19) est de 128 octets... Il y a donc un buffer overflow envisageable, de ```133 - 128 = 5 octets``` !
 
