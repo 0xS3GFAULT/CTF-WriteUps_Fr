@@ -15,7 +15,7 @@ Avant d'exécuter le programme **./ch15**, nous remarquons plusieurs information
 
 ![Screenshot](./assets/images/checksec_ch15.png?raw=true)
 
-Pas de canary, pas d'ASLR ni de PIE.
+Pas de **canary**, pas d'**ASLR** ni de **PIE**.
 
 Exécutons le programme : 
 
