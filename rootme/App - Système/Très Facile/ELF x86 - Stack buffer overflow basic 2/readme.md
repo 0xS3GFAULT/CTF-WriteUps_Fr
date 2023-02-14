@@ -2,7 +2,7 @@
 
 | Auteur/Autrice | Difficulté | Points |
 |----------------|------------|--------|
-|     [Lyes](https://www.root-me.org/Lyes?lang=fr)       | Très facile|   5    |     
+|     [Lyes](https://www.root-me.org/Lyes?lang=fr)       | Très facile|   10    |     
 
 ## Sommaire
 - [Partie 1 : Analyse de l'exécution](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/App%20-%20Syst%C3%A8me/Tr%C3%A8s%20Facile/ELF%20x86%20-%20Stack%20buffer%20overflow%20basic%202/readme.md#partie-1--analyse-de-lex%C3%A9cution)
