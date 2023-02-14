@@ -21,7 +21,7 @@ Exécutons le programme :
 
 ![Screenshot](./assets/images/exec_ch15_1.png?raw=true)
 
-Le programme attend une saisie. Nous tapons '**azerty**', puis le programme nous retourne '*Hey dude ! Waaaaazzaaaaaaaa ?!*'. Puis le programme se ferme...
+Le programme attend une saisie. Nous tapons '**azerty**', puis le programme nous retourne '*Hey dude ! Waaaaazzaaaaaaaa ?!*' et il se ferme...
 
 Nous n'avons pas spécialement beaucoup d'informations, mais le code source en langage C du programme compilé nous ai donné ! Analysons-le.
 
