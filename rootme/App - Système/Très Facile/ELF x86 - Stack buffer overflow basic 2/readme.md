@@ -23,7 +23,7 @@ Exécutons le programme :
 
 Le programme attend une saisie. Nous tapons '**azerty**', puis le programme nous retourne '*Hey dude ! Waaaaazzaaaaaaaa ?!*' et il se ferme...
 
-Nous n'avons pas spécialement beaucoup d'informations, mais le code source en langage C du programme compilé nous ai donné ! Analysons-le.
+Nous n'avons pas spécialement beaucoup d'informations, mais le code source en langage C du programme compilé nous est donné ! Analysons-le.
 
 ## Partie 2 : Analyse statique du code
 
