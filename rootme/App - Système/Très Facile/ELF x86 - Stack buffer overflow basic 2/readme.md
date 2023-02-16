@@ -37,7 +37,7 @@ La commande **file** nous indique que l'exécutable est sur 32 bits :
 
 ![Screenshot](./assets/images/file_ch15.png?raw=true)
 
-Cela représente donc des adresses mémoires de 4 octets, ce qui est juste assez pour en écrire une dans nos 5 octets de buffer overflow.
+Cela représente donc des adresses mémoires de 4 octets, ce qui est juste assez pour en écrire une dans nos 5 octets d'overflow.
 
 Voici la représentation simplifiée de la pile :
 <pre>
