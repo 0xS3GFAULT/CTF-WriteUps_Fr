@@ -15,10 +15,10 @@ Nous nous rendons compte également que beaucoup de paragraphes existent, commen
 Regardons de plus près la ligne ```sheeeesh ongod "%s\n" bruh flag af ;```. Le '**"%s\n"**' pourrait nous faire penser à un flag de la fonction **printf**. Supposons alors que ```sheeeesh ongod "%s\n" bruh flag af ;``` <=> ```printf("%s\n",flag)``` ce qui nous mène à : 
 
 <pre>
-```#define sheeeesh printf```
-```#define ongod (```
-```#define bruh ,```
-```#define af )```
+#define sheeeesh printf
+#define ongod (
+#define bruh ,
+#define af )
 </pre>
 
 Apres avoir fait cela, nous pouvons apercevoir ceci : ```poppin ( lit i lookin cap ; i lowkey 11 ; i playin )```. En toute logique, avec les parenthèses et les points virgules à la chaine, ça pourrait ressembler à une boucle **for**, que nous écririons comme telle : ```for(int i = 0 ; i < 11 ; i ++)``` en assumant que ```lowkey``` corresponde au signe *strictement inférieur à*. Nous avons donc : 
