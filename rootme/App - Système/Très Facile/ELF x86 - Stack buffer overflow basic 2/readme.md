@@ -55,7 +55,7 @@ On va pouvoir écrire la nouvelle adresse pointée par ```func``` qui est de 4 o
 
 ![Screenshot](./assets/images/nm_ch15.png?raw=true)
 
-L'adresse à injecter dans le payload du buffer overflow est donc ```0x08048516```. Exploitons la faille !
+L'adresse à injecter dans le payload du buffer overflow est donc ```0x08048516```, qui représente l'adresse du symbole **shell**, notre fameuse fonction à appeler. Exploitons la faille !
 
 ## Partie 3 : Exploitation du buffer overflow
 
