@@ -64,7 +64,7 @@ ce qui s'apparenterai à une syntaxe ```do{...}while(...);```. Nous avons préc�
 
 Une des lignes de la fonction **kinda** apparaît comme telle : ```for ( int j = 4 ; j > 0 ; j -- ) {``` et ça a du sens. Nous pouvons être sur et certain que ```#define downbad --```.
 
-Les lignes ```void brutus ( char mf x )``` et ```mf ( x dub 2 ) = val ;``` nous feraient penser que **x** est un **char \***. Supposons que ```#define mf *```.
+Les lignes ```void brutus ( char mf x )``` et ```mf ( x dub 2 ) = val ;``` nous feraient penser que **x** est un (**char \***). Supposons que ```#define mf *```.
 
 Soyons fou, estimons également que dans la fonction **willin**, ```tryna ( no n )``` <=> ```if ( ! n )```. En effet, ```no ~ not ~ not equal to``` donc :
 
