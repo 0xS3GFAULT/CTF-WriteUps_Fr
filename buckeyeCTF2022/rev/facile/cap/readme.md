@@ -42,7 +42,7 @@ Toujours dans la fonction **main**, il y aurait la présence d'une déclaration 
 #define rn ] 
 </pre>
 
-Puisque nous supposons que ```deadass``` <=> ```return```, nous voyons qu'il n'y a aucun **return** ni dans la fonction **kinda** ni dans **brutus**. De plus, nous avons ```return ;``` dans la fonction **willin** :  nous en déduisons alors que ces trois fonctions sont de type **void** ce qui nous amène à ```#define legit void```.
+Puisque nous supposons que ```deadass``` <=> ```return```, nous voyons qu'il n'y a aucun **return** ni dans la fonction **kinda** ni dans **brutus**. De plus, nous avons ```return ;``` dans la fonction **willin** :  nous en déduisons alors que ces trois fonctions sont de type **void** ce qui nous mène à ```#define legit void```.
 
 Dans la fonction **kinda** nous voyons ceci :
 
