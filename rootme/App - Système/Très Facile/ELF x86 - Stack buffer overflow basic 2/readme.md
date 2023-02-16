@@ -51,7 +51,7 @@ Voici la représentation simplifiée de la pile :
 |   ebp    | (4 octets)
 ------------
 </pre>
-On va pouvoir écrire la nouvelle adresse pointée par ```func``` qui est de 4 octets : c'est l'adresse de la fonction ```shell```. Mais comment trouver cette adresse ? Puisque les protections **ASLR**,**PIE** et **canary** sont désactivées, on peut directement l'avoir en regardant les symboles du programme grâce à la commande **nm** par exemple : 
+On va pouvoir écrire la nouvelle adresse pointée par ```func``` qui est de 4 octets : c'est l'adresse de la fonction ```shell```. Mais comment trouver cette adresse ? Puisque les protections **ASLR** et **PIE** sont désactivées, les adresses ne sont pas aléatoires. On peut directement regarder les adresses des symboles du programme grâce à la commande **nm** par exemple : 
 
 ![Screenshot](./assets/images/nm_ch15.png?raw=true)
 
