@@ -33,7 +33,8 @@ Nous n'avons pas spécialement beaucoup d'informations, mais le code source en l
 
 4 éléments sont déclarés dans la fonction **main**, dont 2 sont initialisés :
 
-```char buffer[64];
+```
+char buffer[64];
 int check;
 int i = 0;
 int count = 0;
