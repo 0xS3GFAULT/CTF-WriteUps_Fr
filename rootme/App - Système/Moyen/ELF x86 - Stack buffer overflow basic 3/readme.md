@@ -72,7 +72,7 @@ case 0x08:
     break;
 </pre>
 
-Si l'octet saisi vaut **0x08**, la variable **count** est décrémentée. Cette même variable peut être utilisée comme indice du tableau **buffer** à la ligne 45, uniquement si toutes les conditions précédentes ne sont pas vérifiées :
+Si l'octet saisi vaut **0x08**, la variable **count** est décrémentée. Cette même variable peut être utilisée comme indice du tableau **buffer** à la ligne 45, uniquement si toutes les conditions du switch ne sont pas vérifiées :
 
 <pre>
 default:
