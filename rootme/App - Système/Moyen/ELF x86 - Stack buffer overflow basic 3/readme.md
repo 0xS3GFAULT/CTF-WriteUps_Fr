@@ -9,6 +9,12 @@
 - [Partie 2 : Analyse statique du code](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/App%20-%20Syst%C3%A8me/Moyen/ELF%20x86%20-%20Stack%20buffer%20overflow%20basic%203/readme.md#partie-2--analyse-statique-du-code)
 - [Partie 3 : Exploitation du buffer overflow](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/rootme/App%20-%20Syst%C3%A8me/Moyen/ELF%20x86%20-%20Stack%20buffer%20overflow%20basic%203/readme.md#partie-3--exploitation-du-buffer-overflow)
 
+## Session SSH
+
+```ssh -p 2222 app-systeme-ch16@challenge02.root-me.org```
+
+Password : ```app-systeme-ch16```
+
 ## Partie 1 : Analyse de l'exécution
 
 Avant d'exécuter le programme **./ch16**, nous remarquons plusieurs informations nous donnant une vérification de sécurité (checksec) du programme : 
