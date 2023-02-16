@@ -13,6 +13,8 @@
 
 ```ssh -p 2222 app-systeme-ch13@challenge02.root-me.org```
 
+Password : ```app-systeme-ch13```
+
 ## Partie 1 : Analyse de l'exécution
 
 Avant d'exécuter le programme **./ch13**, nous remarquons plusieurs informations nous donnant une vérification de sécurité (checksec) du programme : 
