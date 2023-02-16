@@ -12,7 +12,7 @@ Si c'est du langage C, nous savons que chaque instruction se termine par un poin
 
 Nous nous rendons compte également que beaucoup de paragraphes existent, commencent par une ligne incompréhensible suivie du mot ```finna``` et se finissent par ```tho```. Ces paragraphes représentent très probablement des fonctions, d'où s'en suivent les expressions ```#define finna {``` et ```#define tho }```
 
-Regardons de plus près la ligne ```sheeeesh ongod "%s\n" bruh flag af ;```. Le **"%s\n"** pourrait nous faire penser à un drapeau de la fonction **printf** ou **scanf** par exemple. Supposons alors que ```sheeeesh ongod "%s\n" bruh flag af ;``` <=> ```printf("%s\n",flag)``` car nous ne voyons pas l'intérêt de demander à l'utilisateur d'écraser le contenu du flag alors que des opérations auraient été faites avant dans la fonction. Cela nous mène à : 
+Regardons de plus près la ligne ```sheeeesh ongod "%s\n" bruh flag af ;```. Le **"%s\n"** pourrait nous faire penser à un drapeau de la fonction **printf** ou **scanf** par exemple. Supposons alors que ```sheeeesh ongod "%s\n" bruh flag af ;``` <=> ```printf("%s\n",flag)``` car nous ne voyons pas l'intérêt de demander à l'utilisateur d'écraser le contenu du flag alors que des opérations auraient été faites avant dans la fonction : autant afficher le flag directement. Cela nous mène à : 
 
 <pre>
 #define sheeeesh printf
