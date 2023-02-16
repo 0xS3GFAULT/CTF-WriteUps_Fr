@@ -45,7 +45,7 @@ Cela représente donc des adresses mémoires de 4 octets, ce qui est juste assez
 
 Voici la représentation simplifiée de la pile :
 
-\------------<br \>
+\------------<br />
 |   buf    | (128 octets)
 \------------
 |   func   | (4 octets)
