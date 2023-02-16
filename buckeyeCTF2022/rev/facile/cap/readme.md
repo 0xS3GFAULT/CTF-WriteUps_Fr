@@ -119,7 +119,7 @@ Ce qui nous amène à :
 
 Plus que deux constantes à définir : ```yikes``` et ```chill```. Cependant, ```yikes``` n'est utilisée nulle part dans le code : nous pouvons la supprimer. Il ne reste que la constante ```chill``` dans la fonction **kinda**. Il se pourrait que ce soit le mot clé ```continue``` ou ```break``` mais il ne serait pas logique que la boucle **for** s'arrête au bout de la 2ème itération. Nous supposons alors ```#define chill continue```
 
-Nous avons reformé entièrement le code, qui se trouve [juste ici]().
+Nous avons reformé entièrement le code, qui se trouve [juste ici](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/buckeyeCTF2022/rev/facile/cap/cap_flag.c).
 
 Maintenant il faut savoir si ça fonctionne... Compilons le fichier avec gcc : ```gcc cap.c -o cap``` et croisons les doigts :
 
