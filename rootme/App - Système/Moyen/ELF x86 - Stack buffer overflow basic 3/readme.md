@@ -2,7 +2,7 @@
 
 | Auteur/Autrice | Difficulté | Points |
 |----------------|------------|--------|
-|     [Lyes](https://www.root-me.org/Lyes?lang=fr)       | Très facile|   25    |     
+|     [Lyes](https://www.root-me.org/Lyes?lang=fr)       | Moyen|   25    |     
 
 ## Sommaire
 - [Partie 1 : Analyse de l'exécution]()
@@ -36,7 +36,8 @@ Nous n'avons pas spécialement beaucoup d'informations, mais le code source en l
 ```char buffer[64];
 int check;
 int i = 0;
-int count = 0;```
+int count = 0;
+```
 
 Voici la représentation simplifiée de la pile : 
 
