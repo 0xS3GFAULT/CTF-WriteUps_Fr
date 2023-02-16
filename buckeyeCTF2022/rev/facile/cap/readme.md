@@ -122,8 +122,8 @@ Plus que deux constantes à définir : ```yikes``` et ```chill```. Cependant, ``
 Nous avons reformé entièrement le code, le voci :
 
 <pre>
-#include <stdlib.h>
-#include <stdio.h>
+#include \<stdlib.h\>
+#include \<stdio.h\>
 
 void brutus ( char * x )
 {
