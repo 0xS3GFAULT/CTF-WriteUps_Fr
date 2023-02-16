@@ -45,15 +45,15 @@ Cela représente donc des adresses mémoires de 4 octets, ce qui est juste assez
 
 Voici la représentation simplifiée de la pile :
 
-------------
+\------------
 |   buf    | (128 octets)
-------------
+\------------
 |   func   | (4 octets)
-------------
+\------------
 |   var    | (4 octets)
-------------
+\------------
 |   ebp    | (4 octets)
-------------
+\------------
 
 On va pouvoir écrire la nouvelle adresse pointée par ```func``` qui est de 4 octets : c'est l'adresse de la fonction ```shell```. Mais comment trouver cette adresse ? Puisque les protections **ASLR**,**PIE** et **canary** sont désactivées, on peut directement l'avoir en regardant les symboles du programme grâce à la commande **nm** par exemple : 
 
