@@ -69,7 +69,7 @@ Il faut alors accéder à la mémoire précédant l'adresse du buffer, et pouvoi
 
 ```buffer[-1], buffer[-2], buffer[-3], buffer[-4]```
 
-... et c'est possible grâce au switch de la ligne 33 !
+... et c'est possible grâce à la condition du switch à la ligne 33 !
 
 <pre>
 case 0x08:
