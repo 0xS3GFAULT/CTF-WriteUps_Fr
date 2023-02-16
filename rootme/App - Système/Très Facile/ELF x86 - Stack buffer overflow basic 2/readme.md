@@ -61,7 +61,7 @@ L'adresse à injecter dans le payload du buffer overflow est donc ```0x08048516`
 
 En utilisant Python, nous pouvons écrire le payload suivant : ```python -c "print('A'*128+'\x16\x85\x04\x08')" | ./ch15```
 
-Il ne reste plus qu'à tester et... une erreur de segmentation ? Oui, c'est normal, **/bin/bash** est invoqué mais se ferme tout de suite après, il faut bloquer l'entrée standard **stdin** pour pouvoir écrire dans le nouveau shell. Il est possible de la bloquer avec ```cat -```.
+Il ne reste plus qu'à tester et... une erreur de segmentation ? Oui, c'est normal car **/bin/bash** est invoqué mais se ferme tout de suite après. Il faut bloquer l'entrée standard **stdin** pour pouvoir écrire dans le nouveau shell. Il est possible de la bloquer avec ```cat -```.
 
 Le nouveau payload devient alors ```(python -c "print('A'*128+'\x16\x85\x04\x08')";cat -) | ./ch15```
 
