@@ -4,7 +4,7 @@
 |----------------|------------|--------|
 |     [gsemaj](https://github.com/gsemaj)       | facile |   101    |     
 
-Un fichier [cap.c]() nous est donné. Oulala mais c'est incompréhensible !
+Un fichier [cap.c](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/buckeyeCTF2022/rev/facile/cap/cap.c) nous est donné. Oulala mais c'est incompréhensible !
 
 Bon, déjà, nous savons que c'est du langage C. A nous de déterminer la valeur de chacune de ces constantes de préprocesseur... Nous ne ferons que des suppositions et nous vérifierons à la fin la véracité de nos hypothèses.
 
