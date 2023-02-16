@@ -117,7 +117,7 @@ Ce qui nous amène à :
 #define sus ?
 </pre>
 
-Plus que deux constantes à définir : ```yikes``` et ```chill```. Cependant, ```yikes``` n'est utilisé nulle part dans le code : nous pouvons le supprimer. Il ne reste que le mot ```chill``` dans la fonction **kinda**. Il se pourrait que ce soit le mot clé ```continue``` ou ```break``` mais il ne serait pas logique que la boucle **for** s'arrête au bout de la 2ème itération. Nous supposons alors ```#define chill continue```
+Plus que deux constantes à définir : ```yikes``` et ```chill```. Cependant, ```yikes``` n'est utilisée nulle part dans le code : nous pouvons la supprimer. Il ne reste que la constante ```chill``` dans la fonction **kinda**. Il se pourrait que ce soit le mot clé ```continue``` ou ```break``` mais il ne serait pas logique que la boucle **for** s'arrête au bout de la 2ème itération. Nous supposons alors ```#define chill continue```
 
 Nous avons reformé entièrement le code, le voci :
 
