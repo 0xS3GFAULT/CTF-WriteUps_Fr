@@ -125,4 +125,4 @@ Maintenant il faut savoir si ça fonctionne... Compilons le fichier avec gcc : `
 
 ![Screenshot](./assets/images/flag_cap.png?raw=true)
 
-No cap, it's bussin respectfully, fr :)
+That shit bussin no cap :)
