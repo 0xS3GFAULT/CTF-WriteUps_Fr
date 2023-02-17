@@ -58,7 +58,12 @@ Voici la représentation simplifiée de la pile :
 ----------
 </pre>
 
-Le **ret** dans la pile représente en fait l'adresse de la prochaine instruction à exécuter une fois l'appel du **main** terminé. 
+Le **ret** dans la pile représente en fait l'adresse de la prochaine instruction à exécuter une fois l'appel du **main** terminé. C'est une instruction qui peut se traduire en assembleur par :
+
+```
+pop rip
+jmp rip
+```
 
 Nous voyons assez facilement que la fonction **scanf** à la ligne 21 permet d'écrire bien plus que les 256 octets prévus pour le buffer.
 De ce fait, il serait possible de réecrire l'endroit où se situe l'adresse lors de l'exécution du **ret**. Si nous regardons la pile d'un peu plus près, nous comprenons que ```256 + 8 + 8 + 8 = 280 octets ``` sont nécessaires avant d'arriver à l'endroit qui nous intéresse.
