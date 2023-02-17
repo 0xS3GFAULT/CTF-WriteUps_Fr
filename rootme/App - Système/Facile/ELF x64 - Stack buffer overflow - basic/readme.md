@@ -88,6 +88,6 @@ Il ne faut pas oublier le ```cat -``` qui permet de bloquer l'entrée standard *
 
 Il n'y a plus qu'à se servir :
 
-![Screenshot](./assets/images/exploit_ch35.png?raw=true)
+![Screenshot](./assets/images/exploit_ch3.png?raw=true)
 
 :)
