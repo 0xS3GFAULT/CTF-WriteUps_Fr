@@ -6,9 +6,9 @@
 
 Un fichier [cap.c](https://github.com/0xS3GFAULT/CTF-WriteUps_Fr/blob/main/buckeyeCTF2022/rev/facile/cap/cap.c) nous est donné. Oulala mais c'est incompréhensible !
 
-Bon, déjà, nous savons que c'est du langage C. A nous de déterminer la valeur de chacune de ces constantes de préprocesseur... Nous ne ferons que des suppositions et nous vérifierons à la fin la véracité de nos hypothèses.
+Bon, déjà, nous savons que c'est du langage C dit *obfuscated*, c'est-à-dire "obscurci" . A nous de déterminer la valeur de chacune de ces constantes de préprocesseur... Nous ne ferons que des suppositions et nous vérifierons à la fin la véracité de nos hypothèses en compilant le fichier avec gcc et en exécutant le binaire sortant.
 
-Si c'est du langage C, nous savons que chaque instruction se termine par un point virgule, et beaucoup de lignes se terminent par ```fr```. Nous supposons alors que ```#define fr ;```
+Puisque c'est du langage C, nous savons que chaque instruction se termine par un point virgule, et beaucoup de lignes se terminent par ```fr```. Nous supposons alors que ```#define fr ;```
 
 Nous nous rendons compte également que beaucoup de paragraphes existent, commencent par une ligne incompréhensible suivie du mot ```finna``` et se finissent par ```tho```. Ces paragraphes représentent très probablement des fonctions, d'où s'en suivent les expressions ```#define finna {``` et ```#define tho }```
 
