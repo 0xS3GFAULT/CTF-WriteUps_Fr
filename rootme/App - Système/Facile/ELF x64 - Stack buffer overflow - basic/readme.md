@@ -65,6 +65,8 @@ pop rip
 jmp rip
 ```
 
+Ce qui nous permettrait de rediriger le flux d'exécution là où on veut !
+
 Nous voyons assez facilement que la fonction **scanf** à la ligne 21 permet d'écrire bien plus que les 256 octets prévus pour le buffer.
 De ce fait, il serait possible de réecrire l'endroit où se situe l'adresse lors de l'exécution du **ret**. Si nous regardons la pile d'un peu plus près, nous comprenons que ```256 + 8 + 8 + 8 = 280 octets ``` sont nécessaires avant d'arriver à l'endroit qui nous intéresse.
 
